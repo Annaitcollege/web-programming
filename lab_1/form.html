@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запропонувати місто — Мої найкращі міста світу</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Запропонувати місто для наступного рейтингу</h1>
+        <nav>
+            <a href="index.html">Головна</a> |
+            <a href="city-tokyo.html">Токіо</a> |
+            <a href="city-paris.html">Париж</a> |
+            <a href="city-frankivsk.html">Івано-Франківськ</a> |
+            <a href="form.html">Запропонувати місто</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Заповніть форму</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="user-name">Ваше ім'я:</label><br>
+                    <input type="text" id="user-name" name="user_name" required>
+                </p>
+
+                <p>
+                    <label for="user-email">Ваш Email:</label><br>
+                    <input type="email" id="user-email" name="user_email" required>
+                </p>
+
+                <p>
+                    <label for="city-name">Назва міста:</label><br>
+                    <input type="text" id="city-name" name="city_name" required>
+                </p>
+
+                <p>
+                    <label for="country">Країна:</label><br>
+                    <input type="text" id="country" name="country" required>
+                </p>
+
+                <p>
+                    <label for="continent">Континент / Частина світу:</label><br>
+                    <select id="continent" name="continent" required>
+                        <option value="">-- Оберіть варіант --</option>
+                        <option value="europe">Європа</option>
+                        <option value="asia">Азія</option>
+                        <option value="america">Америка</option>
+                        <option value="africa">Африка</option>
+                        <option value="oceania">Океанія</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="reason">Чому варто відвідати це місто?</label><br>
+                    <textarea id="reason" name="reason" rows="5" cols="40" required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Надіслати пропозицію</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Блог про міста.</p>
+    </footer>
+</body>
+</html>
